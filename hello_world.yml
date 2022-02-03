@@ -7,8 +7,8 @@
         msg: "Hello WORLD - from Github!"
 #    - debug:
 #        var: ansible_facts
-    - name: Ensure the httpd service is running
+    - name: Ensure the cron service is running
       service:
-        name: httpd
+        name: cron
         state: started
       become: yes        
