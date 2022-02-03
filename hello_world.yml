@@ -5,5 +5,10 @@
     - name: Hello Message
       debug:
         msg: "Hello WORLD - from Github!"
-    - debug:
-        var: ansible_facts
+#    - debug:
+#        var: ansible_facts
+- name: Ensure the httpd service is running
+  service:
+    name: httpd
+    state: started
+  become: yes        
