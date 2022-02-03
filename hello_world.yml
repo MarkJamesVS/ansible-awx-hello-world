@@ -5,7 +5,5 @@
     - name: Hello Message
       debug:
         msg: "Hello WORLD - from Github!"
-
-- name: Print all available facts
-  ansible.builtin.debug:
-    var: ansible_facts
+    - debug:
+        var: ansible_facts
